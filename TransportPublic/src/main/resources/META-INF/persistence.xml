@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="TransportPublic">
+		<jta-data-source>java:/transport</jta-data-source>
+		<class>tn.esprit.persistance.Actuality</class>
+		<class>tn.esprit.persistance.Administrator</class>
+		<class>tn.esprit.persistance.Bus</class>
+		<class>tn.esprit.persistance.Customer</class>
+		<class>tn.esprit.persistance.Itinerary</class>
+		<class>tn.esprit.persistance.Metro</class>
+		<class>tn.esprit.persistance.Person</class>
+		<class>tn.esprit.persistance.Planning</class>
+		<class>tn.esprit.persistance.Reclamation</class>
+		<class>tn.esprit.persistance.Reservation</class>
+		<class>tn.esprit.persistance.Subscription</class>
+		<class>tn.esprit.persistance.Taxi</class>
+		<class>tn.esprit.persistance.Train</class>
+		<class>tn.esprit.persistance.Vehicle</class>
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create" />
+		</properties>
+
+	</persistence-unit>
+</persistence>
